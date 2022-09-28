@@ -1,4 +1,9 @@
-@import "bootstrap/scss/bootstrap.scss";
+$primary:       rgb(61, 61, 60);
+$secondary:     gray;
+$nav-link-color: black;
+$nav-link-font-size: 1.2rem;
+@import "~bootstrap/scss/bootstrap";
+
 
 /* GLOBAL STYLES
 -------------------------------------------------- */
@@ -9,7 +14,6 @@ body {
   padding-bottom: 3rem;
   color: #5a5a5a;
 }
-
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -29,7 +33,6 @@ body {
   height: 32rem;
 }
 
-
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
@@ -40,11 +43,10 @@ body {
 }
 /* rtl:begin:ignore */
 .marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
 }
 /* rtl:end:ignore */
-
 
 /* Featurettes
 ------------------------- */
@@ -56,7 +58,7 @@ body {
 /* Thin out the marketing headings */
 /* rtl:begin:remove */
 .featurette-heading {
-  letter-spacing: -.05rem;
+  letter-spacing: -0.05rem;
 }
 
 /* rtl:end:remove */
@@ -97,7 +99,6 @@ body {
   }
 }
 
-
 .b-example-divider {
   height: 3rem;
   background-color: rgba(0, 0, 0, 0.1);
@@ -134,4 +135,12 @@ body {
   text-align: center;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
+}
+
+.navbar-brand {
+  img {
+    width: 100px;
+    height: 100%;
+    vertical-align: middle;
+  }
 }
