@@ -1,9 +1,8 @@
-$primary:       rgb(61, 61, 60);
-$secondary:     gray;
+$primary: rgb(61, 61, 60);
+$secondary: gray;
 $nav-link-color: black;
-$nav-link-font-size: 1.2rem;
+$nav-link-font-size: 1.5rem;
 @import "~bootstrap/scss/bootstrap";
-
 
 /* GLOBAL STYLES
 -------------------------------------------------- */
@@ -13,6 +12,18 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: #5a5a5a;
+}
+
+.logo {
+  width: 200px;
+  height: 40px;
+  background-image: url("./images/logo.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+.navbar {
+  box-shadow: rgba(150, 150, 150, 0.5) 0px 0px 10px;
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -31,6 +42,34 @@ body {
 /* Declare heights because of positioning of img element */
 .carousel-item {
   height: 32rem;
+
+  h1 {
+    text-shadow: rgba(0, 0, 0, 0.3) 0 0 20px;
+  }
+
+  .slide-img {
+    height: 100%;
+    background-size: cover;
+  }
+
+  &.slide1 {
+    .slide-img {
+      background-image: url("./images/background1.jpg");
+    }
+  }
+
+  &.slide2 {
+    .slide-img {
+      background-image: url("./images/background2.jpg");
+    }
+  }
+
+  &.slide3 {
+    .slide-img {
+      background-image: url("./images/background3.jpg");
+      background-position: center center;
+    }
+  }
 }
 
 /* MARKETING CONTENT
@@ -63,6 +102,15 @@ body {
 
 /* rtl:end:remove */
 
+.team-member {
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  margin: 0 auto 20px;
+  box-shadow: rgba(150, 150, 150, 0.8) 0px 0px 15px;
+  overflow: hidden;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -82,6 +130,31 @@ body {
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
+  }
+}
+
+.featurette-image {
+  width: 500px;
+  height: 500px;
+  background-size: cover;
+  border-radius: 10px;
+
+  &.image1 {
+    background-image: url("./images/aboutus.jpg");
+    background-position: center right;
+  }
+  &.image2 {
+    background-image: url("./images/ourvision.jpg");
+  }
+  &.image3 {
+    background-image: url("./images/ourvalues.jpg");
+  }
+  &.image4 {
+    background-image: url("./images/socialresponsibility.jpg");
+  }
+  &.image5 {
+    background-image: url("./images/ourleadership.jpg");
+    background-position: center right;
   }
 }
 
